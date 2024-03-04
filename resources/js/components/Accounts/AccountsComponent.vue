@@ -1,4 +1,5 @@
 <template>
+    <div class="flex-div">
     <div class="container">
         <table class="table table-bordered my-3">
             <thead>
@@ -21,6 +22,7 @@
         </table>
         <div class="text-center"><a href="#" @click.prevent="OpenAddLine(1)" class="btn btn-outline-primary btn-xl"><i class="bi bi-person-add"></i></a></div>
     </div>
+</div>
 </template>
 
 <script>
@@ -112,6 +114,16 @@ export default {
 </script>
 
 <style scoped>
+
+.flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/img/img-5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .btn-xl {
     width: 60px;
